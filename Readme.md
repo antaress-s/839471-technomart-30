@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Арина Рыжило](https://up.htmlacademy.ru/htmlcss/30/user/839471).
-* Наставник: `[Дарья Кургаева](https://htmlacademy.ru/profile/less-loony)`.
+* Наставник: [Дарья Кургаева](https://htmlacademy.ru/profile/less-loony).
 
 ---
 
