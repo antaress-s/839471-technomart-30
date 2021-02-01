@@ -7,7 +7,7 @@
       <body>
           <header>
             <section>
-             <a href="index.html"><h2>Техномарт</h2></a>
+             <a href="index.html">Техномарт</a>
               <form action="#" method="get">
               <input id="s-search" type="text" name="search" placeholder="Поиск:">
               </form>
@@ -19,9 +19,16 @@
                 <p>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
                 <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <a href="#">Иконка человек</a>
-                <a href="#">Равшан Джамшутович</a>
-                <a href="#">Иконка вход</a>
+                <div>
+                <a href="blank.html">
+                  <!--Иконка человек-->
+                Равшан Джамшутович
+              </a>
+                <a href="blank.html">
+                  Выход
+                  <!--Иконка выход-->
+                  </a>
+                </div>
                 <ul>
                   <li>
                     <a href="#"><h4>Мои заказы</h4></a>
@@ -65,10 +72,12 @@
               <form method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                   <legend>Цена</legend>
-                  <input type="range" min="0" max="30000" step="1" value="12500">
-                  <input type="number" min="0" max="30000">
-                  <input type="number" min="0" max="30000">
-                  <p>0-30000</p>
+                  <input type="range" min="0" max="30000" step="1" value="12500" id="price">
+                  <label for="price">Цена</label>
+                  <input type="number" value="0" id="price-from">
+                  <label for="price-from">От</label>
+                  <input type="number" value="30000" id="price-to">
+                  <label for="price-to">До</label>
                 </fieldset>
                 <fieldset>
                   <legend>Производители</legend>
@@ -121,6 +130,12 @@
                 </li>
                 <li>
                   <a href="#">По функционалу</a>
+                </li>
+                <li>
+                  <button type="button">Вверх</button>
+                </li>
+                <li>
+                  <button type="button">Вниз</button>
                 </li>
               </ul>
             </section>
@@ -226,7 +241,7 @@
              </section>
           </main>
           <footer>
-            <h2>Техномарт</h2>
+            <a href="index.html">Техномарт</a>
             <ul>
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
