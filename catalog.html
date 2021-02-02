@@ -11,8 +11,8 @@
               <form action="#" method="get">
               <input id="s-search" type="text" name="search" placeholder="Поиск:">
               </form>
-              <a href="blank.html">Закладки:0</a>
-              <a href="blank.html">Корзина:10</a>
+              <a href="#">Закладки:0</a>
+              <a href="#">Корзина:10</a>
               <button type="button">Оформить заказ</button>
             </section>
               <section>
@@ -20,11 +20,11 @@
                 <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <div>
-                <a href="blank.html">
+                <a href="#">
                   <!--Иконка человек-->
                 Равшан Джамшутович
               </a>
-                <a href="blank.html">
+                <a href="#">
                   Выход
                   <!--Иконка выход-->
                   </a>
@@ -72,12 +72,18 @@
               <form method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                   <legend>Цена</legend>
-                  <input type="range" min="0" max="30000" step="1" value="12500" id="price">
-                  <label for="price">Цена</label>
-                  <input type="number" value="0" id="price-from">
-                  <label for="price-from">От</label>
-                  <input type="number" value="30000" id="price-to">
-                  <label for="price-to">До</label>
+                <div>
+                  <input type="range" min="0" max="30000" step="1" value="12500" name="price" id="filter-price">
+                  <label for="filter-price">Цена</label>
+                </div>
+                <div>
+                  <input type="number" value="0" name="price-from" id="filter-price-from">
+                  <label for="filter-price-from">От</label>
+                </div>
+                <div>
+                  <input type="number" value="30000" name ="price-to" id="filter-price-to">
+                  <label for="filter-price-to">До</label>
+                </div>
                 </fieldset>
                 <fieldset>
                   <legend>Производители</legend>
@@ -131,13 +137,9 @@
                 <li>
                   <a href="#">По функционалу</a>
                 </li>
-                <li>
-                  <button type="button">Вверх</button>
-                </li>
-                <li>
-                  <button type="button">Вниз</button>
-                </li>
               </ul>
+              <button type="button">Вверх</button>
+              <button type="button">Вниз</button>
             </section>
            <section>
              <h3>Список перфораторов</h3>
