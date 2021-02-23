@@ -64,10 +64,6 @@ ul {
     list-style: none;
 }
 
-li {
-    list-style-type: none;
-}
-
 .main-menu {
     background-color: var(--eclipse);
     color: var(--basic-white);
@@ -86,17 +82,17 @@ li {
     color: var(--basic-white);
 }
 
-.search:focus {
-    color: var(--basic-black);
+.search:focus::placeholder {
     background-color: var(--basic-white);
+    color: var(--basic-black);
 }
 
-.mark-basket {
+.user-link {
     font-size: 18px;
     color: var(--basic-white);
 }
 
-.mark-basket:active {
+.user-link:active {
     opacity: 50%;
     background-color: var(--graphite);
 }
@@ -118,6 +114,7 @@ li {
 }
 
 .button-log-reg {
+    color: var(--basic-black);
     background-color: var(--basic-white);
     font-size: 21px;
     line-height: 21px;
@@ -229,6 +226,14 @@ li {
     line-height: 18px;
     background-color: rgba(255, 255, 255, 0.3);
     color: var(--basic-white);
+}
+
+.promo-btn:hover {
+    background-color: rgba(197, 197, 197, 0.3);
+}
+
+.promo-btn:active {
+    background-color: rgba(169, 169, 169, 0.3);
 }
 
 .regular-btn:active {
@@ -348,8 +353,12 @@ li {
     border: 3px solid var(--border-grey);
 }
 
+.creator-item {
+    display: block;
+}
+
 .creator-item-image {
-    border: 1px solid var(--light-pink);
+    border: 1px solid var(--light-grey-ea);
 }
 
 .creator-item:hover {
@@ -390,10 +399,13 @@ li {
 }
 
 .services-list {
-    background-color: var(--eclipse-lighter);
     color: var(--basic-white);
     font-size: 21px;
     line-height: 30px;
+}
+
+.services-item {
+    background-color: var(--eclipse-lighter);
 }
 
 .services-item:hover {
@@ -479,15 +491,15 @@ li {
     background-color: var(--eclipse);
 }
 
-.formail {
+.contacts-link {
     color: var(--sand);
 }
 
-.formail:hover {
+.contacts-link:hover {
     text-decoration: underline var(--sand);
 }
 
-.formail:active {
+.contacts-link:active {
     color: var(--basic-red);
     text-decoration: none;
 }
