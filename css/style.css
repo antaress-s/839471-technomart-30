@@ -110,7 +110,7 @@ ul {
 }
 
 .order-button:active {
-    opacity: 50px;
+    opacity: 50%;
 }
 
 .button-log-reg {
@@ -137,14 +137,16 @@ ul {
 }
 
 .nav-list {
-    line-height: 24px;
     list-style: none;
 }
 
 .nav-list-item {
     font-size: 18px;
     display: inline-block;
-    line-height: 24px;
+    color: var(--basic-white);
+}
+
+.nav-list-item a {
     color: var(--basic-white);
 }
 
@@ -355,9 +357,6 @@ ul {
 
 .creator-item {
     display: block;
-}
-
-.creator-item-image {
     border: 1px solid var(--light-grey-ea);
 }
 
@@ -446,6 +445,10 @@ ul {
     color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
+}
+
+.main-logo-big {
+    height: 68px;
 }
 
 .footer-text:focus {
