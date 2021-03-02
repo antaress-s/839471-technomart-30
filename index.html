@@ -143,30 +143,30 @@
                 <h2>Популярные производители:</h2>
                 <a href="#" class="regular-btn">Все производители</a>
             </div>
-            <ul>
-                <li>
-                    <a href="#" class="creator-item"><img src="img/Proiz1.png" width="126" height="37" alt="Bosch" class="creator-item-image"></a>
+            <ul class="creator-list">
+                <li class="creator-item">
+                    <a href="#"><img src="img/Proiz1.png" width="126" height="37" alt="Bosch" class="creator-item-image"></a>
                 </li>
-                <li>
-                    <a href="#" class="creator-item"><img src="img/Makita1.png" width="123" height="40" alt="Makita" class="creator-item-image"></a>
+                <li class="creator-item">
+                    <a href="#"><img src="img/Makita1.png" width="123" height="40" alt="Makita" class="creator-item-image"></a>
                 </li>
-                <li>
-                    <a href="#" class="creator-item"><img src="img/DeWALT.png" width="146" height="44" alt="DeWALT" class="creator-item-image"></a>
+                <li class="creator-item">
+                    <a href="#"><img src="img/DeWALT.png" width="146" height="44" alt="DeWALT" class="creator-item-image"></a>
                 </li>
-                <li>
-                    <a href="#" class="creator-item"><img src="img/Интерскол1.png" width="200" height="75" alt="Interscol" class="creator-item-image"></a>
+                <li class="creator-item">
+                    <a href="#"><img src="img/Интерскол1.png" width="200" height="75" alt="Interscol" class="creator-item-image"></a>
                 </li>
-                <li>
-                    <a href="#" class="creator-item"><img src="img/Hitachi.png" width="169" height="31" alt="Hitachi" class="creator-item-image"></a>
+                <li class="creator-item">
+                    <a href="#"><img src="img/Hitachi.png" width="169" height="31" alt="Hitachi" class="creator-item-image"></a>
                 </li>
-                <li>
-                    <a href="#" class="creator-item"><img src="img/LG.png" width="121" height="73" alt="LG" class="creator-item-image"></a>
+                <li class="creator-item">
+                    <a href="#"><img src="img/LG.png" width="121" height="73" alt="LG" class="creator-item-image"></a>
                 </li>
-                <li>
-                    <a href="#" class="creator-item"><img src="img/AEG.png" width="151" height="96" alt="AEG" class="creator-item-image"></a>
+                <li class="creator-item">
+                    <a href="#"><img src="img/AEG.png" width="151" height="96" alt="AEG" class="creator-item-image"></a>
                 </li>
-                <li>
-                    <a href="#" class="creator-item"><img src="img/Metabo.png" width="204" height="69" alt="Metabo" class="creator-item-image"></a>
+                <li class="creator-item">
+                    <a href="#"><img src="img/Metabo.png" width="204" height="69" alt="Metabo" class="creator-item-image"></a>
                 </li>
             </ul>
         </section>
@@ -283,6 +283,23 @@
             </p>
         </section>
     </footer>
+    <section class="feedback">
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+            <label for="feedback-name" class="form-name">Ваше имя:</label>
+            <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+            <label for="feedback-mail" class="form-mail">Ваш e-mail:</label>
+            <input id="feedback-mail" type="text" name="mail" placeholder="email@example.com">
+            <label for="feedback-letter" class="form-letter">Текст письма:</label>
+            <input id="feedback-letter" type="text" name="letter" placeholder="В свободной форме">
+            <div class="feedback-bottom">
+                <button type="submit" class="feedback-button">Отправить</button>
+            </div>
+            <a href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
+                </svg></a>
+        </form>
+
+    </section>
 </body>
 
 </html>

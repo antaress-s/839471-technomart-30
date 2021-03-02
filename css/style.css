@@ -27,6 +27,8 @@
     --creamy: #F7F3EC;
     --wolf: #D7DCDE;
     --another-grey: #E5E5E5;
+    --basic-background-close: #F1F1F1;
+    --smoky: #F4F4F4;
 }
 
 body {
@@ -95,7 +97,7 @@ ul {
     color: var(--basic-white);
 }
 
-.catalog-user-link {
+.user-link-full {
     background-color: var(--basic-red);
 }
 
@@ -148,6 +150,22 @@ ul {
 
 .personal-page:active {
     color: var(--basic-greylight);
+}
+
+.personal-page:hover .person path {
+    fill: var(--basic-grey);
+}
+
+.personal-page:hover .logout path {
+    fill: var(--basic-grey);
+}
+
+.personal-page:active .person path {
+    fill: var(--basic-greylight);
+}
+
+.personal-page:active .logout path {
+    fill: var(--basic-greylight);
 }
 
 .personal-info-item {
@@ -388,7 +406,7 @@ ul {
 }
 
 .creator-item {
-    display: block;
+    background-color: var(--basic-white);
     border: 1px solid var(--light-grey-ea);
 }
 
@@ -479,10 +497,21 @@ ul {
 }
 
 .catalog-title {
-    color: var(--eclipse-lighter);
     background-color: var(--basic-background);
+}
+
+.catalog-title-item {
+    color: var(--eclipse-lighter);
     font-size: 30px;
     line-height: 30px;
+    text-transform: uppercase;
+}
+
+.all-filter {
+    font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.filter {
     text-transform: uppercase;
 }
 
@@ -496,7 +525,6 @@ ul {
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
-    text-transform: uppercase;
 }
 
 fieldset {
@@ -556,6 +584,7 @@ input[type="checkbox"] {
 }
 
 .sorting {
+    font-family: "PT Sans", "Arial", sans-serif;
     background-color: var(--creamy);
     text-transform: uppercase;
     line-height: 18px;
@@ -587,16 +616,7 @@ input[type="checkbox"] {
     fill: var(--basic-red);
 }
 
-.catalog-products {
-    background-color: var(--basic-white);
-    border: 1px solid var(--light-grey-ea);
-}
-
-.catalog-products:hover {
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-}
-
-.item-pages {
+.page-item {
     border: 1px solid var(--another-grey);
     box-sizing: border-box;
     border-radius: 2px;
@@ -604,16 +624,16 @@ input[type="checkbox"] {
     line-height: 18px;
 }
 
-.item-pages:hover {
-    border: var(--basic-greylight);
+.page-item:hover {
+    border: 1px solid var(--basic-greylight);
 }
 
-.item-pages:active {
-    border: var(--basic-red);
+.page-item:active {
+    border: 1px solid var(--basic-red);
 }
 
 .item-pages-selected {
-    border: var(--basic-red);
+    border: 1px solid var(--basic-red);
     background-color: var(--basic-red);
     color: var(--basic-white);
 }
@@ -626,6 +646,72 @@ input[type="checkbox"] {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+.feedback {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--basic-white);
+    border-top: 7px solid var(--basic-red);
+    font-size: 18px;
+    color: var(--basic-black);
+}
+
+.feedback input {
+    border: 2px solid var(--basic-greylight);
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: var(--basic-black);
+}
+
+.feedback ::placeholder {
+    color: var(--ashen);
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.feedback-bottom {
+    background-color: var(--smoky);
+}
+
+.feedback-button {
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    height: 38px;
+    width: 460px;
+}
+
+.basket {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--basic-white);
+    border-top: 7px solid var(--basic-red);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.basket-title {
+    text-transform: none;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.basket-buttons {
+    background-color: var(--basic-background-close);
+}
+
+.basket-order {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
+
+.basket-continue {
+    background-color: var(--basic-white);
 }
 
 .main-footer {
