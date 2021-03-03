@@ -490,7 +490,7 @@ ul {
     font-size: 18px;
 }
 
-.catalog-pages-item {
+.catalog-pages-link {
     line-height: 18px;
     color: var(--basic-black);
     text-transform: uppercase;
@@ -517,8 +517,10 @@ ul {
 
 .catalog-filter {
     background-color: var(--creamy);
+    font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .filter legend {
@@ -590,6 +592,11 @@ input[type="checkbox"] {
     line-height: 18px;
 }
 
+.sorting-title {
+    font-size: 13px;
+    font-weight: normal;
+}
+
 .sorting-item {
     color: var(--basic-black);
     opacity: 0.3;
@@ -616,7 +623,11 @@ input[type="checkbox"] {
     fill: var(--basic-red);
 }
 
-.page-item {
+.pagination-item {
+    background-color: var(--basic-white);
+}
+
+.pagination-link {
     border: 1px solid var(--another-grey);
     box-sizing: border-box;
     border-radius: 2px;
@@ -624,15 +635,15 @@ input[type="checkbox"] {
     line-height: 18px;
 }
 
-.page-item:hover {
+.pagination-link:hover {
     border: 1px solid var(--basic-greylight);
 }
 
-.page-item:active {
+.pagination-link:active {
     border: 1px solid var(--basic-red);
 }
 
-.item-pages-selected {
+.pagination-link-selected {
     border: 1px solid var(--basic-red);
     background-color: var(--basic-red);
     color: var(--basic-white);
@@ -712,6 +723,7 @@ input[type="checkbox"] {
 
 .basket-continue {
     background-color: var(--basic-white);
+    color: var(--basic-black);
 }
 
 .main-footer {
